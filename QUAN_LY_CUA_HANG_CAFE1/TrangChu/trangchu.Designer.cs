@@ -1,6 +1,6 @@
-﻿namespace QUAN_LY_CUA_HANG_CAFE1
+﻿namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
 {
-    partial class Form1
+    partial class trangchu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // trangchu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1194, 603);
+            this.Name = "trangchu";
+            this.Text = "trangchu";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

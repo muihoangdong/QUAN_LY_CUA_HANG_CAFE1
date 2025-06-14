@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUAN_LY_CUA_HANG_CAFE1
+namespace QUAN_LY_CUA_HANG_CAFE1.Login
 {
-    public partial class Form1 : Form
+    public partial class quenmatkhau : Form
     {
-        public Form1()
+        public quenmatkhau()
         {
             InitializeComponent();
         }

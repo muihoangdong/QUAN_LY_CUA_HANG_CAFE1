@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QUAN_LY_CUA_HANG_CAFE1.NhanVien;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,19 +16,21 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
         private Size originalFormSize;
         private Dictionary<Control, Rectangle> originalControlBounds = new Dictionary<Control, Rectangle>();
         private Dictionary<Control, float> originalFontSizes = new Dictionary<Control, float>();
-
-
         public trangchu()
         {
             InitializeComponent();
             this.Load += Form1_Load;
             this.Resize += Form1_Resize;
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             originalFormSize = this.Size;
             SaveOriginalBounds(this);
+
+            ShowHomeScreen();
         }
 
         public void loadAll()
@@ -53,6 +56,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
         {
             float xRatio = (float)this.Width / originalFormSize.Width;
             float yRatio = (float)this.Height / originalFormSize.Height;
+
             ResizeControls(this, xRatio, yRatio);
         }
 
@@ -81,6 +85,51 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
                 {
                     ResizeControls(c, xRatio, yRatio);
                 }
+            }
+        }
+
+        private void ShowHomeScreen()
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(pictureBox1);
+            pictureBox1.Dock = DockStyle.Fill;
+        }
+        private void trangchu_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            ShowHomeScreen();
+
+        }
+
+        private void nhanvien_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel1.Controls.Clear();
+            thongtinnv nv = new thongtinnv();
+            nv.Dock = DockStyle.Fill;
+            panel1.Controls.Add(nv);
+        }
+
+        private void lichtrinh_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void khohang_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void thoatra_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+        "Bạn có chắc chắn muốn thoát không?",
+        "Thông báo",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
             }
         }
     }

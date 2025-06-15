@@ -72,7 +72,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1
             trangchu tc = new trangchu();
             this.Hide();
             tc.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void quenmatkhau_btn_MouseClick(object sender, MouseEventArgs e)

@@ -15,6 +15,10 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
         public quenmatkhau()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         }
     }
 }

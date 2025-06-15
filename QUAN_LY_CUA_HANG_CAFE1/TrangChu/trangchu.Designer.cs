@@ -28,19 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.thoatra_btn = new System.Windows.Forms.Button();
+            this.khohang_btn = new System.Windows.Forms.Button();
+            this.lichtrinh_btn = new System.Windows.Forms.Button();
+            this.nhanvien_btn = new System.Windows.Forms.Button();
+            this.trangchu_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(227, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(983, 594);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.thoatra_btn);
+            this.panel2.Controls.Add(this.khohang_btn);
+            this.panel2.Controls.Add(this.lichtrinh_btn);
+            this.panel2.Controls.Add(this.nhanvien_btn);
+            this.panel2.Controls.Add(this.trangchu_btn);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(221, 594);
+            this.panel2.TabIndex = 0;
+            // 
+            // thoatra_btn
+            // 
+            this.thoatra_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thoatra_btn.Location = new System.Drawing.Point(12, 501);
+            this.thoatra_btn.Name = "thoatra_btn";
+            this.thoatra_btn.Size = new System.Drawing.Size(194, 57);
+            this.thoatra_btn.TabIndex = 4;
+            this.thoatra_btn.Text = "Thoát ra";
+            this.thoatra_btn.UseVisualStyleBackColor = true;
+            this.thoatra_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.thoatra_btn_MouseClick);
+            // 
+            // khohang_btn
+            // 
+            this.khohang_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.khohang_btn.Location = new System.Drawing.Point(12, 379);
+            this.khohang_btn.Name = "khohang_btn";
+            this.khohang_btn.Size = new System.Drawing.Size(194, 57);
+            this.khohang_btn.TabIndex = 3;
+            this.khohang_btn.Text = "Kho hàng";
+            this.khohang_btn.UseVisualStyleBackColor = true;
+            this.khohang_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.khohang_btn_MouseClick);
+            // 
+            // lichtrinh_btn
+            // 
+            this.lichtrinh_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lichtrinh_btn.Location = new System.Drawing.Point(12, 253);
+            this.lichtrinh_btn.Name = "lichtrinh_btn";
+            this.lichtrinh_btn.Size = new System.Drawing.Size(194, 57);
+            this.lichtrinh_btn.TabIndex = 2;
+            this.lichtrinh_btn.Text = "Lịch trình";
+            this.lichtrinh_btn.UseVisualStyleBackColor = true;
+            this.lichtrinh_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lichtrinh_btn_MouseClick);
+            // 
+            // nhanvien_btn
+            // 
+            this.nhanvien_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhanvien_btn.Location = new System.Drawing.Point(12, 139);
+            this.nhanvien_btn.Name = "nhanvien_btn";
+            this.nhanvien_btn.Size = new System.Drawing.Size(194, 57);
+            this.nhanvien_btn.TabIndex = 1;
+            this.nhanvien_btn.Text = "Nhân viên";
+            this.nhanvien_btn.UseVisualStyleBackColor = true;
+            this.nhanvien_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nhanvien_btn_MouseClick);
+            // 
+            // trangchu_btn
+            // 
+            this.trangchu_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trangchu_btn.Location = new System.Drawing.Point(12, 30);
+            this.trangchu_btn.Name = "trangchu_btn";
+            this.trangchu_btn.Size = new System.Drawing.Size(194, 57);
+            this.trangchu_btn.TabIndex = 0;
+            this.trangchu_btn.Text = "Trang chủ";
+            this.trangchu_btn.UseVisualStyleBackColor = true;
+            this.trangchu_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.trangchu_btn_MouseClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be86257;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be862571;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(983, 594);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // trangchu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 603);
+            this.ClientSize = new System.Drawing.Size(1210, 594);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "trangchu";
             this.Text = "trangchu";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button trangchu_btn;
+        private System.Windows.Forms.Button thoatra_btn;
+        private System.Windows.Forms.Button khohang_btn;
+        private System.Windows.Forms.Button lichtrinh_btn;
+        private System.Windows.Forms.Button nhanvien_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

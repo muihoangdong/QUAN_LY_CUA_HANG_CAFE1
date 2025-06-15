@@ -52,6 +52,18 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KhoHang\khohang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KhoHang\khohang.Designer.cs">
+      <DependentUpon>khohang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichTrinh\lichtrinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LichTrinh\lichtrinh.Designer.cs">
+      <DependentUpon>lichtrinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\dangky.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     <Compile Include="Login\quenmatkhau.Designer.cs">
       <DependentUpon>quenmatkhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien\thongtinnv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NhanVien\thongtinnv.Designer.cs">
+      <DependentUpon>thongtinnv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrangChu\trangchu.cs">
@@ -78,6 +96,12 @@
     <Compile Include="TrangChu\trangchu.Designer.cs">
       <DependentUpon>trangchu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="KhoHang\khohang.resx">
+      <DependentUpon>khohang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichTrinh\lichtrinh.resx">
+      <DependentUpon>lichtrinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\dangky.resx">
       <DependentUpon>dangky.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\quenmatkhau.resx">
       <DependentUpon>quenmatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\thongtinnv.resx">
+      <DependentUpon>thongtinnv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,10 +146,12 @@
   <ItemGroup>
     <None Include="Resources\password.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="KhoHang\" />
-    <Folder Include="LichTrinh\" />
-    <Folder Include="NhanVien\" />
+    <None Include="Resources\3dcef437d2c27737c27d47198be86257.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3dcef437d2c27737c27d47198be862571.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

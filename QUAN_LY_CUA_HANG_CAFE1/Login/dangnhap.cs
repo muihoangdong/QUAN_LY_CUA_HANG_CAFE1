@@ -18,6 +18,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1
         {
             InitializeComponent();
             this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -85,7 +86,17 @@ namespace QUAN_LY_CUA_HANG_CAFE1
 
         private void thoat_btn_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show(
+        "Bạn có chắc chắn muốn thoát không?",
+        "Thông báo",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

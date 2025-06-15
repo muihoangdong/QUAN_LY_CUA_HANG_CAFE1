@@ -22,6 +22,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             this.Load += Form1_Load;
             this.Resize += Form1_Resize;
             this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         }
 

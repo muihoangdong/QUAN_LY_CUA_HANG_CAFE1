@@ -16,9 +16,17 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
         {
             InitializeComponent();
             this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        }
+
+        private void quaylai_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            dangnhap dn = new dangnhap();
+            this.Close();
         }
     }
 }

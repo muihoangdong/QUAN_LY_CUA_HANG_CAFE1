@@ -118,16 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ptr_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ptr_login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="meme-meo-an-bong-ngo-gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\meme-meo-an-bong-ngo-gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3dcef437d2c27737c27d47198be86257" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3dcef437d2c27737c27d47198be86257.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saudi-league-al-shabab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saudi-league-al-shabab.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3dcef437d2c27737c27d47198be862571" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3dcef437d2c27737c27d47198be862571.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ptr_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ptr_login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coffee gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1f7e3c3219cf87882a25764b7f088d59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1f7e3c3219cf87882a25764b7f088d59.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premium_photo-1664970900025-1e3099ca757a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premium_photo-1664970900025-1e3099ca757a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

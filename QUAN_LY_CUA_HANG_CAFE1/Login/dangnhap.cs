@@ -17,7 +17,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1
         public dangnhap()
         {
             InitializeComponent();
-            this.AutoScaleMode = AutoScaleMode.Dpi;
             this.AutoScaleMode = AutoScaleMode.Font;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -32,14 +31,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1
                 textBox1.ForeColor = Color.Black;
             }
         }
-        private void textBox1_MouseLeave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
-            {
-                textBox1.Text = "Nhập tên đăng nhập";
-                textBox1.ForeColor = Color.Gray;
-            }
-        }
+        
 
         private void textBox2_MouseClick(object sender, MouseEventArgs e)
         {
@@ -51,15 +43,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1
             }
         }
 
-        private void textBox2_MouseLeave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                textBox2.Text = "Nhập mật khẩu";
-                textBox2.ForeColor = Color.Gray;
-                textBox2.UseSystemPasswordChar = false;
-            }
-        }
+        
         private void dangky_btn_MouseClick(object sender, MouseEventArgs e)
         {
             dangky dk = new dangky();

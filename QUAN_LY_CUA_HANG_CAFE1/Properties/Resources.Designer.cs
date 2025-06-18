@@ -63,6 +63,16 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1f7e3c3219cf87882a25764b7f088d59 {
+            get {
+                object obj = ResourceManager.GetObject("1f7e3c3219cf87882a25764b7f088d59", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3dcef437d2c27737c27d47198be86257 {
             get {
                 object obj = ResourceManager.GetObject("3dcef437d2c27737c27d47198be86257", resourceCulture);
@@ -83,6 +93,26 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coffee_gif {
+            get {
+                object obj = ResourceManager.GetObject("coffee gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap meme_meo_an_bong_ngo_gif {
+            get {
+                object obj = ResourceManager.GetObject("meme-meo-an-bong-ngo-gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap password {
             get {
                 object obj = ResourceManager.GetObject("password", resourceCulture);
@@ -93,9 +123,29 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap premium_photo_1664970900025_1e3099ca757a {
+            get {
+                object obj = ResourceManager.GetObject("premium_photo-1664970900025-1e3099ca757a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ptr_login {
             get {
                 object obj = ResourceManager.GetObject("ptr_login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saudi_league_al_shabab {
+            get {
+                object obj = ResourceManager.GetObject("saudi-league-al-shabab", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

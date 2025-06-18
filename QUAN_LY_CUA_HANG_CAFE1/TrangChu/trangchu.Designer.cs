@@ -29,39 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.doanhthu_btn = new System.Windows.Forms.Button();
             this.thoatra_btn = new System.Windows.Forms.Button();
             this.khohang_btn = new System.Windows.Forms.Button();
             this.lichtrinh_btn = new System.Windows.Forms.Button();
             this.nhanvien_btn = new System.Windows.Forms.Button();
             this.trangchu_btn = new System.Windows.Forms.Button();
-            this.doanhthu_btn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(227, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(225, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(983, 594);
+            this.panel1.Size = new System.Drawing.Size(975, 595);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be86257;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be862571;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(983, 594);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -77,6 +66,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(221, 595);
             this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 103);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Coffee       shop";
+            // 
+            // doanhthu_btn
+            // 
+            this.doanhthu_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doanhthu_btn.Location = new System.Drawing.Point(12, 438);
+            this.doanhthu_btn.Name = "doanhthu_btn";
+            this.doanhthu_btn.Size = new System.Drawing.Size(194, 57);
+            this.doanhthu_btn.TabIndex = 5;
+            this.doanhthu_btn.Text = "Doanh thu";
+            this.doanhthu_btn.UseVisualStyleBackColor = true;
+            this.doanhthu_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.doanhthu_btn_MouseClick);
             // 
             // thoatra_btn
             // 
@@ -133,24 +142,17 @@
             this.trangchu_btn.UseVisualStyleBackColor = true;
             this.trangchu_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.trangchu_btn_MouseClick);
             // 
-            // doanhthu_btn
+            // pictureBox1
             // 
-            this.doanhthu_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doanhthu_btn.Location = new System.Drawing.Point(12, 438);
-            this.doanhthu_btn.Name = "doanhthu_btn";
-            this.doanhthu_btn.Size = new System.Drawing.Size(194, 57);
-            this.doanhthu_btn.TabIndex = 5;
-            this.doanhthu_btn.Text = "Doanh thu";
-            this.doanhthu_btn.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 103);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Coffee       shop";
+            this.pictureBox1.BackgroundImage = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be86257;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be862571;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(975, 595);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // trangchu
             // 
@@ -162,8 +164,8 @@
             this.Name = "trangchu";
             this.Text = "trangchu";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

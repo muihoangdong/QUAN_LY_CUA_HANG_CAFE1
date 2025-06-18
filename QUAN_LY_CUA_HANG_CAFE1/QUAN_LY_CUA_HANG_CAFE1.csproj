@@ -102,6 +102,9 @@
     <Compile Include="TrangChu\trangchu.Designer.cs">
       <DependentUpon>trangchu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DoanhThu\doanhthu.resx">
+      <DependentUpon>doanhthu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhoHang\khohang.resx">
       <DependentUpon>khohang.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,12 +155,26 @@
   <ItemGroup>
     <None Include="Resources\password.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\meme-meo-an-bong-ngo-gif.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3dcef437d2c27737c27d47198be86257.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3dcef437d2c27737c27d47198be862571.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1f7e3c3219cf87882a25764b7f088d59.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saudi-league-al-shabab.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium_photo-1664970900025-1e3099ca757a.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

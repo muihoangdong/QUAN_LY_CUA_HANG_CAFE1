@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.quaylai_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.quaylai_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,8 +51,40 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(682, 439);
+            this.panel1.Size = new System.Drawing.Size(699, 439);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(47, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(567, 38);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "ĐĂNG KÝ TÀI KHOẢN NHÂN VIÊN";
+            // 
+            // quaylai_btn
+            // 
+            this.quaylai_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quaylai_btn.Location = new System.Drawing.Point(273, 358);
+            this.quaylai_btn.Name = "quaylai_btn";
+            this.quaylai_btn.Size = new System.Drawing.Size(150, 54);
+            this.quaylai_btn.TabIndex = 7;
+            this.quaylai_btn.Text = "Quay lại";
+            this.quaylai_btn.UseVisualStyleBackColor = true;
+            this.quaylai_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.quaylai_btn_MouseClick);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(464, 358);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 54);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Đăng ký";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // panel2
             // 
@@ -66,70 +98,15 @@
             this.panel2.Size = new System.Drawing.Size(592, 261);
             this.panel2.TabIndex = 0;
             // 
-            // textBox1
+            // comboBox2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(17, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(552, 27);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Nhập email đăng nhập";
-            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
-            this.textBox1.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(17, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(552, 27);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Nhập tên nhân viên";
-            this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseClick);
-            this.textBox2.MouseLeave += new System.EventHandler(this.textBox2_MouseLeave);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(17, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(552, 27);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Nhập tên đăng nhập";
-            this.textBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox3_MouseClick);
-            this.textBox3.MouseLeave += new System.EventHandler(this.textBox3_MouseLeave);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(464, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 54);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Đăng ký";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
-            // 
-            // quaylai_btn
-            // 
-            this.quaylai_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quaylai_btn.Location = new System.Drawing.Point(273, 358);
-            this.quaylai_btn.Name = "quaylai_btn";
-            this.quaylai_btn.Size = new System.Drawing.Size(150, 54);
-            this.quaylai_btn.TabIndex = 7;
-            this.quaylai_btn.Text = "Quay lại";
-            this.quaylai_btn.UseVisualStyleBackColor = true;
-            this.quaylai_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.quaylai_btn_MouseClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(588, 39);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "ĐĂNG KÝ TÀI KHOẢN NHÂN VIÊN";
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(17, 207);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(552, 28);
+            this.comboBox2.TabIndex = 6;
+            this.comboBox2.Text = "Chọn chức vụ";
             // 
             // comboBox1
             // 
@@ -141,21 +118,41 @@
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "Nhập năm sinh";
             // 
-            // comboBox2
+            // textBox3
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(17, 207);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(552, 28);
-            this.comboBox2.TabIndex = 6;
-            this.comboBox2.Text = "Chọn chức vụ";
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(17, 106);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(552, 27);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "Nhập tên đăng nhập";
+            this.textBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox3_MouseClick);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(17, 58);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(552, 27);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "Nhập tên nhân viên";
+            this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(17, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(552, 27);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Nhập email đăng ký";
+            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             // 
             // dangky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 439);
+            this.ClientSize = new System.Drawing.Size(699, 439);
             this.Controls.Add(this.panel1);
             this.Name = "dangky";
             this.Text = "dangky";

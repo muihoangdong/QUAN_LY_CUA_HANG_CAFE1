@@ -15,7 +15,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
         public dangky()
         {
             InitializeComponent();
-            this.AutoScaleMode = AutoScaleMode.Dpi;
             this.AutoScaleMode = AutoScaleMode.Font;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -31,19 +30,10 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (textBox1.Text == "Nhập email đăng nhập")
+            if (textBox1.Text == "Nhập email đăng ký")
             {
                 textBox1.Text = "";
                 textBox1.ForeColor = Color.Black;
-            }
-        }
-
-        private void textBox1_MouseLeave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
-            {
-                textBox1.Text = "Nhập email đăng nhập";
-                textBox1.ForeColor = Color.Gray;
             }
         }
 
@@ -56,14 +46,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
             }
         }
 
-        private void textBox2_MouseLeave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                textBox2.Text = "Nhập tên nhân viên";
-                textBox2.ForeColor = Color.Gray;
-            }
-        }
 
         private void textBox3_MouseClick(object sender, MouseEventArgs e)
         {
@@ -74,14 +56,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
             }
         }
 
-        private void textBox3_MouseLeave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox3.Text))
-            {
-                textBox3.Text = "Nhập tên đăng nhập";
-                textBox3.ForeColor = Color.Gray;
-            }
-        }
 
         private void dangky_Load(object sender, EventArgs e)
         {
@@ -114,7 +88,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
             string chucVu = comboBox2.SelectedItem?.ToString() ?? "";
 
             // Kiểm tra dữ liệu chưa nhập hoặc chọn
-            if (email == "Nhập email đăng nhập" || string.IsNullOrWhiteSpace(email) ||
+            if (email == "Nhập email đăng ký" || string.IsNullOrWhiteSpace(email) ||
                 tenNV == "Nhập tên nhân viên" || string.IsNullOrWhiteSpace(tenNV) ||
                 tenDN == "Nhập tên đăng nhập" || string.IsNullOrWhiteSpace(tenDN) ||
                 comboBox1.SelectedIndex == 0 || comboBox2.SelectedIndex == 0)

@@ -1,4 +1,7 @@
-﻿using QUAN_LY_CUA_HANG_CAFE1.NhanVien;
+﻿using QUAN_LY_CUA_HANG_CAFE1.DoanhThu;
+using QUAN_LY_CUA_HANG_CAFE1.KhoHang;
+using QUAN_LY_CUA_HANG_CAFE1.LichTrinh;
+using QUAN_LY_CUA_HANG_CAFE1.NhanVien;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +24,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             InitializeComponent();
             this.Load += Form1_Load;
             this.Resize += Form1_Resize;
-            this.AutoScaleMode = AutoScaleMode.Dpi;
             this.AutoScaleMode = AutoScaleMode.Font;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         }
@@ -44,8 +46,11 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
         {
             foreach (Control c in parent.Controls)
             {
-                originalControlBounds[c] = c.Bounds;
-                originalFontSizes[c] = c.Font.Size; // Lưu font size ban đầu
+                if (!originalControlBounds.ContainsKey(c))
+                {
+                    originalControlBounds[c] = c.Bounds;
+                    originalFontSizes[c] = c.Font.Size;
+                }
 
                 if (c.HasChildren)
                     SaveOriginalBounds(c);
@@ -107,16 +112,38 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             thongtinnv nv = new thongtinnv();
             nv.Dock = DockStyle.Fill;
             panel1.Controls.Add(nv);
+
+            SaveOriginalBounds(nv);
         }
 
         private void lichtrinh_btn_MouseClick(object sender, MouseEventArgs e)
         {
+            panel1.Controls.Clear();
+            lichtrinh lt = new lichtrinh();
+            lt.Dock = DockStyle.Fill;
+            panel1.Controls.Add(lt);
 
+            SaveOriginalBounds(lt);
         }
 
         private void khohang_btn_MouseClick(object sender, MouseEventArgs e)
         {
+            panel1.Controls.Clear();
+            khohang kh = new khohang();
+            kh.Dock = DockStyle.Fill;
+            panel1.Controls.Add(kh);
 
+            SaveOriginalBounds(kh);
+        }
+
+        private void doanhthu_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel1.Controls.Clear();
+            doanhthu dt = new doanhthu();
+            dt.Dock = DockStyle.Fill;
+            panel1.Controls.Add(dt);
+
+            SaveOriginalBounds(dt);
         }
 
         private void thoatra_btn_MouseClick(object sender, MouseEventArgs e)

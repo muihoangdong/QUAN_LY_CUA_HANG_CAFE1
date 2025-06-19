@@ -52,11 +52,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoanhThu\doanhthu.cs">
+    <Compile Include="HoaDon\hoadon.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DoanhThu\doanhthu.Designer.cs">
-      <DependentUpon>doanhthu.cs</DependentUpon>
+    <Compile Include="HoaDon\hoadon.Designer.cs">
+      <DependentUpon>hoadon.cs</DependentUpon>
     </Compile>
     <Compile Include="KhoHang\khohang.cs">
       <SubType>UserControl</SubType>
@@ -102,8 +102,8 @@
     <Compile Include="TrangChu\trangchu.Designer.cs">
       <DependentUpon>trangchu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DoanhThu\doanhthu.resx">
-      <DependentUpon>doanhthu.cs</DependentUpon>
+    <EmbeddedResource Include="HoaDon\hoadon.resx">
+      <DependentUpon>hoadon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhoHang\khohang.resx">
       <DependentUpon>khohang.cs</DependentUpon>

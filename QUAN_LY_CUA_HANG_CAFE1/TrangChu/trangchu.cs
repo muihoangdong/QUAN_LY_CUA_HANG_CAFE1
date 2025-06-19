@@ -1,4 +1,5 @@
 ﻿using QUAN_LY_CUA_HANG_CAFE1.DoanhThu;
+using QUAN_LY_CUA_HANG_CAFE1.HoaDon;
 using QUAN_LY_CUA_HANG_CAFE1.KhoHang;
 using QUAN_LY_CUA_HANG_CAFE1.LichTrinh;
 using QUAN_LY_CUA_HANG_CAFE1.NhanVien;
@@ -136,16 +137,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             SaveOriginalBounds(kh);
         }
 
-        private void doanhthu_btn_MouseClick(object sender, MouseEventArgs e)
-        {
-            panel1.Controls.Clear();
-            doanhthu dt = new doanhthu();
-            dt.Dock = DockStyle.Fill;
-            panel1.Controls.Add(dt);
-
-            SaveOriginalBounds(dt);
-        }
-
         private void thoatra_btn_MouseClick(object sender, MouseEventArgs e)
         {
             DialogResult result = MessageBox.Show(
@@ -159,6 +150,16 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             {
                 Application.Exit();
             }
+        }
+
+        private void hoadon_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel1.Controls.Clear();
+            hoadon hd = new hoadon();
+            hd.Dock = DockStyle.Fill;
+            panel1.Controls.Add(hd);
+
+            SaveOriginalBounds(hd);
         }
     }
 }

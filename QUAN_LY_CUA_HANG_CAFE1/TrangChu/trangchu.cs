@@ -1,5 +1,4 @@
 ﻿using QUAN_LY_CUA_HANG_CAFE1.DoanhThu;
-using QUAN_LY_CUA_HANG_CAFE1.HoaDon;
 using QUAN_LY_CUA_HANG_CAFE1.KhoHang;
 using QUAN_LY_CUA_HANG_CAFE1.LichTrinh;
 using QUAN_LY_CUA_HANG_CAFE1.NhanVien;
@@ -65,6 +64,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             float yRatio = (float)this.Height / originalFormSize.Height;
 
             ResizeControls(this, xRatio, yRatio);
+            ResizeControls(panel1, xRatio, yRatio); // 👈 cần thiết
         }
 
         private void ResizeControls(Control parent, float xRatio, float yRatio)
@@ -95,6 +95,18 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             }
         }
 
+        private void LoadUserControl(UserControl uc)
+        {
+            panel1.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            panel1.Controls.Add(uc);
+
+            SaveOriginalBounds(uc); // lưu bounds
+            ResizeControls(uc,
+                (float)this.Width / originalFormSize.Width,
+                (float)this.Height / originalFormSize.Height); // resize ngay
+        }
+
         private void ShowHomeScreen()
         {
             panel1.Controls.Clear();
@@ -107,6 +119,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
 
         }
 
+
         private void nhanvien_btn_MouseClick(object sender, MouseEventArgs e)
         {
             panel1.Controls.Clear();
@@ -115,16 +128,6 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
             panel1.Controls.Add(nv);
 
             SaveOriginalBounds(nv);
-        }
-
-        private void lichtrinh_btn_MouseClick(object sender, MouseEventArgs e)
-        {
-            panel1.Controls.Clear();
-            lichtrinh lt = new lichtrinh();
-            lt.Dock = DockStyle.Fill;
-            panel1.Controls.Add(lt);
-
-            SaveOriginalBounds(lt);
         }
 
         private void khohang_btn_MouseClick(object sender, MouseEventArgs e)
@@ -136,9 +139,18 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
 
             SaveOriginalBounds(kh);
         }
+        private void lichtrinh_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel1.Controls.Clear();
+            lichtrinh lt = new lichtrinh();
+            lt.Dock = DockStyle.Fill;
+            panel1.Controls.Add(lt);
+
+            SaveOriginalBounds(lt);
+        }
 
 
-        private void doanhthu_btn_MouseClick(object sender, MouseEventArgs e)
+        private void doanhthu_btn_MouseClick_1(object sender, MouseEventArgs e)
         {
             panel1.Controls.Clear();
             doanhthu dt = new doanhthu();

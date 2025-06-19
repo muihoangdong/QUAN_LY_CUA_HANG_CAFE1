@@ -16,5 +16,10 @@ namespace QUAN_LY_CUA_HANG_CAFE1.KhoHang
         {
             InitializeComponent();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

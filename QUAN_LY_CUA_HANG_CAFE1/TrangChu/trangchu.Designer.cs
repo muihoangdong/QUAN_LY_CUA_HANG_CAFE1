@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.doanhthu_btn = new System.Windows.Forms.Button();
@@ -37,10 +38,9 @@
             this.lichtrinh_btn = new System.Windows.Forms.Button();
             this.nhanvien_btn = new System.Windows.Forms.Button();
             this.trangchu_btn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -51,6 +51,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(975, 595);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be86257;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be862571;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(975, 595);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -85,6 +97,7 @@
             this.doanhthu_btn.TabIndex = 5;
             this.doanhthu_btn.Text = "Doanh thu";
             this.doanhthu_btn.UseVisualStyleBackColor = true;
+            this.doanhthu_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.doanhthu_btn_MouseClick_1);
             // 
             // thoatra_btn
             // 
@@ -141,18 +154,6 @@
             this.trangchu_btn.UseVisualStyleBackColor = true;
             this.trangchu_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.trangchu_btn_MouseClick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be86257;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::QUAN_LY_CUA_HANG_CAFE1.Properties.Resources._3dcef437d2c27737c27d47198be862571;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(975, 595);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // trangchu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -163,8 +164,8 @@
             this.Name = "trangchu";
             this.Text = "trangchu";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

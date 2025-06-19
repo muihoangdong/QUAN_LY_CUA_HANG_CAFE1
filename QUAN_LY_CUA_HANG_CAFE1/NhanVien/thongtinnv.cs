@@ -51,5 +51,15 @@ namespace QUAN_LY_CUA_HANG_CAFE1.NhanVien
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

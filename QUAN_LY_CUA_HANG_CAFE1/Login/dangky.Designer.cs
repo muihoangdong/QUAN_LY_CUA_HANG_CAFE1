@@ -38,6 +38,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(699, 439);
+            this.panel1.Size = new System.Drawing.Size(699, 515);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -67,7 +69,7 @@
             // quaylai_btn
             // 
             this.quaylai_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quaylai_btn.Location = new System.Drawing.Point(273, 358);
+            this.quaylai_btn.Location = new System.Drawing.Point(274, 418);
             this.quaylai_btn.Name = "quaylai_btn";
             this.quaylai_btn.Size = new System.Drawing.Size(150, 54);
             this.quaylai_btn.TabIndex = 7;
@@ -78,7 +80,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(464, 358);
+            this.button1.Location = new System.Drawing.Point(477, 418);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 54);
             this.button1.TabIndex = 6;
@@ -88,6 +90,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.textBox3);
@@ -95,14 +99,14 @@
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(45, 78);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(592, 261);
+            this.panel2.Size = new System.Drawing.Size(592, 301);
             this.panel2.TabIndex = 0;
             // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(17, 207);
+            this.comboBox2.Location = new System.Drawing.Point(17, 247);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(552, 28);
             this.comboBox2.TabIndex = 6;
@@ -112,7 +116,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(17, 158);
+            this.comboBox1.Location = new System.Drawing.Point(17, 196);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(552, 28);
             this.comboBox1.TabIndex = 5;
@@ -121,11 +125,11 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(17, 106);
+            this.textBox3.Location = new System.Drawing.Point(17, 147);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(552, 27);
             this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Nhập tên đăng nhập";
+            this.textBox3.Text = "Nhập mã nhân viên";
             this.textBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox3_MouseClick);
             // 
             // textBox2
@@ -148,11 +152,35 @@
             this.textBox1.Text = "Nhập email đăng ký";
             this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(17, 103);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(68, 24);
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Nam";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(116, 103);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(53, 24);
+            this.radioButton2.TabIndex = 8;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Nữ";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // dangky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 439);
+            this.ClientSize = new System.Drawing.Size(699, 515);
             this.Controls.Add(this.panel1);
             this.Name = "dangky";
             this.Text = "dangky";
@@ -177,5 +205,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

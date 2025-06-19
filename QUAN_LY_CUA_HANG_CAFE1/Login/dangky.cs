@@ -49,7 +49,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
 
         private void textBox3_MouseClick(object sender, MouseEventArgs e)
         {
-            if (textBox3.Text == "Nhập tên đăng nhập")
+            if (textBox3.Text == "Nhập mã nhân viên")
             {
                 textBox3.Text = "";
                 textBox3.ForeColor = Color.Black;
@@ -90,7 +90,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.Login
             // Kiểm tra dữ liệu chưa nhập hoặc chọn
             if (email == "Nhập email đăng ký" || string.IsNullOrWhiteSpace(email) ||
                 tenNV == "Nhập tên nhân viên" || string.IsNullOrWhiteSpace(tenNV) ||
-                tenDN == "Nhập tên đăng nhập" || string.IsNullOrWhiteSpace(tenDN) ||
+                tenDN == "Nhập mã nhân viên" || string.IsNullOrWhiteSpace(tenDN) ||
                 comboBox1.SelectedIndex == 0 || comboBox2.SelectedIndex == 0)
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);

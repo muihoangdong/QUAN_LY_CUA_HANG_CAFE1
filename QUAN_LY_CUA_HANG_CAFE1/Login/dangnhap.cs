@@ -25,7 +25,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (textBox1.Text == "Nhập tên đăng nhập")
+            if (textBox1.Text == "Nhập mã nhân viên")
             {
                 textBox1.Text = "";
                 textBox1.ForeColor = Color.Black;

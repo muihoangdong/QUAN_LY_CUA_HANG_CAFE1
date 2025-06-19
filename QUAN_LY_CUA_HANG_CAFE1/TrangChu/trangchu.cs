@@ -1,4 +1,5 @@
 ﻿using QUAN_LY_CUA_HANG_CAFE1.DoanhThu;
+using QUAN_LY_CUA_HANG_CAFE1.HoaDon;
 using QUAN_LY_CUA_HANG_CAFE1.KhoHang;
 using QUAN_LY_CUA_HANG_CAFE1.LichTrinh;
 using QUAN_LY_CUA_HANG_CAFE1.NhanVien;
@@ -135,6 +136,7 @@ namespace QUAN_LY_CUA_HANG_CAFE1.TrangChu
 
             SaveOriginalBounds(kh);
         }
+
 
         private void doanhthu_btn_MouseClick(object sender, MouseEventArgs e)
         {

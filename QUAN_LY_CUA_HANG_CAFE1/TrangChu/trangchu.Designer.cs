@@ -85,7 +85,6 @@
             this.doanhthu_btn.TabIndex = 5;
             this.doanhthu_btn.Text = "Doanh thu";
             this.doanhthu_btn.UseVisualStyleBackColor = true;
-            this.doanhthu_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.doanhthu_btn_MouseClick);
             // 
             // thoatra_btn
             // 
